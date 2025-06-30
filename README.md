@@ -21,5 +21,5 @@ npm axios react-router-dom react-hook-form
 ### To run the server
 npm run dev
 
-##Website flowchart
+## Website flowchart
 ![Copy of hackathon(2)](https://github.com/user-attachments/assets/d0f5b666-1845-41c4-a901-9bd2f6adc3f8)
