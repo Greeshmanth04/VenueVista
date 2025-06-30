@@ -18,8 +18,9 @@ nodemon server.js
 npm install
 npm axios react-router-dom react-hook-form
 
-### To run the server
+### To run the development server
 npm run dev
 
 ## Website flowchart
+Below is the visual representation of VenueVista's website flow:
 ![Copy of hackathon(2)](https://github.com/user-attachments/assets/d0f5b666-1845-41c4-a901-9bd2f6adc3f8)
