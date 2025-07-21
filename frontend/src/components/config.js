@@ -1,1 +1,0 @@
-export const BASE_URL = "https://bsgzkqvn-4000.inc1.devtunnels.ms";
