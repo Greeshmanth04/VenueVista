@@ -1,0 +1,122 @@
+### ADMIN ###
+#Login
+POST http://localhost:4000/admin-api/login
+Content-Type: application/json
+
+{
+    "userType": "admin",
+    "email": "admin@gmail.com",
+    "password": "admin123"
+}
+
+###Get all halls
+GET http://localhost:4000/admin-api/halls
+
+###Add hall
+POST http://localhost:4000/admin-api/hall
+Content-Type: application/json
+
+{
+    "name": "PJ-hall",
+    "capacity": "250",
+    "location": "D-block",
+    "description": "This is a medium auditorium suitable for various guest lecture, programs, events, etc...",
+    "blockStatus": false
+}
+
+###Update hall
+PUT http://localhost:4000/admin-api/hall
+Content-Type: application/json
+
+{
+    "id": 1750416464716,
+    "name": "ks-audi",
+    "capacity": "300",
+    "location": "B-block",
+    "description": "This is a large auditorium suitable for various guest lecture, programs, events, etc...",
+    "blockStatus": false
+}
+
+###Block hall
+PUT http://localhost:4000/admin-api/block-hall/ks-audi
+
+###Delete hall
+DELETE http://localhost:4000/admin-api/hall/pg-hall
+
+###Get all users
+GET http://localhost:4000/admin-api/users
+
+###Verify user
+PUT http://localhost:4000/admin-api/verify-user/ramesh@gmail.com
+
+###Block user
+PUT http://localhost:4000/admin-api/block-user/ramesh@gmail.com
+
+###View bookings
+GET http://localhost:4000/admin-api/bookings
+
+###View specific hall bookings
+GET http://localhost:4000/admin-api/hall-bookings/ks-audi
+
+###Verify booking
+PUT http://localhost:4000/admin-api/verify-booking/1750073353775
+
+###Block booking
+PUT http://localhost:4000/admin-api/block-booking/1750073353775
+
+### USER ###
+###Register
+POST http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "userType": "user",
+    "firstname": "ramesh",
+    "lastname": "vallapuri",
+    "role": "president",
+    "club": "ACM",
+    "email": "ramesh@gmail.com",
+    "password": "ramesh123",
+    "verifyStatus": false,
+    "activeStatus": true
+}
+
+###Login
+POST http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "userType": "user",
+    "email": "ramesh@gmail.com",
+    "password": "ramesh123"
+}
+
+###View all halls
+GET http://localhost:4000/user-api/halls
+
+###Book hall
+POST http://localhost:4000/user-api/booking
+Content-Type: application/json
+
+{
+    "bookingID": "{{$timestamp}}",
+    "bookingEmail": "greesh@gmail.com",
+    "hallname": "APJ-hall",
+    "date": "19/6/2025",
+    "slot": "an",
+    "dateOfBooking": "{{$datetime iso8601}}",
+    "verifyStatus": false,
+    "activeStatus": true
+}
+
+###View all bookings
+GET http://localhost:4000/user-api/bookings
+
+###View specific hall bookings
+GET http://localhost:4000/user-api/hall-bookings/ks-audi
+
+###View user bookings
+GET http://localhost:4000/user-api/user-bookings/ramesh@gmail.com
+
+###Cancel booking
+PUT http://localhost:4000/user-api/cancel-booking/1750494524787
