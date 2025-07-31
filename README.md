@@ -23,4 +23,5 @@ npm run dev
 ## Website flowchart
 Below is the visual representation of VenueVista's website flow:
 
-![Copy of hackathon(2)](https://github.com/user-attachments/assets/d0f5b666-1845-41c4-a901-9bd2f6adc3f8)
+<img width="1920" height="1080" alt="Copy of hackathon(2)" src="https://github.com/user-attachments/assets/bb3145b4-cac5-43e7-b6c2-f4990b7b78f5" />
+
