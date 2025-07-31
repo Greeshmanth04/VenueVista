@@ -24,6 +24,8 @@ const adminApp = require("./APIs/admin-api.js");
 app.use("/user-api", userApp);
 app.use("/admin-api", adminApp);
 
+console.log("DB_URL:", process.env.DB_URL);
+
 const mongoClient = require("mongodb").MongoClient
 const db_url = process.env.DB_URL;
 mongoClient.connect(db_url)
