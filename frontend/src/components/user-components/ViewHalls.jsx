@@ -4,7 +4,7 @@ import img from "../../assets/auditorium.jpg";
 import {useState, useEffect} from "react";
 import {useNavigate, useOutletContext} from "react-router-dom";
 import axios from "axios";
-import { BASE_URL } from "../../config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function ViewHalls() {
 

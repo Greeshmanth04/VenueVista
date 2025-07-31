@@ -5,7 +5,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { tokenContext } from "../../contexts/TokenContext";
-import { BASE_URL } from "../../config.js";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function Halls() {
 

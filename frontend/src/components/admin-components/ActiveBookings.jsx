@@ -6,7 +6,7 @@ import Calendar from "react-calendar";
 import { useContext } from "react";
 import { tokenContext } from "../../contexts/TokenContext";
 import BookingDetails from "../BookingDetails";
-import { BASE_URL } from "../../config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function ActiveBookings() {
   const [halls, setHalls] = useState([]);

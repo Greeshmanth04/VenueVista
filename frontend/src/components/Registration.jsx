@@ -2,7 +2,7 @@ import "./Registration.css";
 import {useState} from "react";
 import {useForm} from "react-hook-form";
 import axios from "axios";
-import { BASE_URL } from "../config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function Registration() {
 

@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { tokenContext } from "../../contexts/TokenContext";
 import { userContext } from "../../contexts/UserContext";
 import { useOutletContext } from "react-router-dom";
-import { BASE_URL } from "../../config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function BookHall() {
 

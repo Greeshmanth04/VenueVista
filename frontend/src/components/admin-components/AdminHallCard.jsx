@@ -4,7 +4,7 @@ import { useState } from "react";
 import { tokenContext } from "../../contexts/TokenContext";
 import { useContext } from "react";
 import axios from "axios";
-import { BASE_URL } from "../../config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function AdminHallCard(props) {
 

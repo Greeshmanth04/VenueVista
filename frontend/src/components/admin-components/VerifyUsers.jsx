@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { tokenContext } from "../../contexts/TokenContext";
-import { BASE_URL } from "../../config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function VerifyUsers() {
   const [users, setUsers] = useState([]);

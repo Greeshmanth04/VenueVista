@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { tokenContext } from "../../contexts/TokenContext";
 import { useOutletContext , useNavigate} from "react-router-dom";
 import BookingDetails from "../BookingDetails";
-import { BASE_URL } from "../../config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function AllBookings() {
   const [halls, setHalls] = useState([]);
