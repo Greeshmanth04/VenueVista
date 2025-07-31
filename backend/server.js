@@ -6,7 +6,7 @@ require("dotenv").config();
 let cors = require("cors");
 app.use(cors({
     origin: [
-        "http://localhost:5173",
+        process.env.FRONTEND_URL,
         "https://bsgzkqvn-4000.inc1.devtunnels.ms"
     ],
     methods: "GET,POST,PUT,DELETE",
