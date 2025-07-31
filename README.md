@@ -8,6 +8,8 @@ PORT = 4000
 
 DB_URL = mongodb://localhost:27017/hallbooking
 
+FRONTEND_URL = http://localhost:5173
+
 JWT_SECRET = abcdef
 
 ### To run the server:
