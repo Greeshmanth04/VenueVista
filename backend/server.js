@@ -6,15 +6,14 @@ require("dotenv").config();
 let cors = require("cors");
 app.use(cors({
     origin: [
-        process.env.FRONTEND_URL,
-        "https://bsgzkqvn-4000.inc1.devtunnels.ms"
+        process.env.FRONTEND_URL
     ],
     methods: "GET,POST,PUT,DELETE",
     credentials: true
 }));
 
-let path = require("path");
-app.use(exp.static(path.join(__dirname, "../frontend/dist")));
+// let path = require("path");
+// app.use(exp.static(path.join(__dirname, "../frontend/dist")));
 
 app.use(exp.json());
 
